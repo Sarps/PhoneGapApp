@@ -61,5 +61,8 @@
     </feature>
     <!-- Deprecated plugins element. Remove in 3.0 -->
     <plugins>
+        <plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
+		<feature name="http://api.phonegap.com/1.0/camera"/>
+		<feature name="http://api.phonegap.com/1.0/file"/>
     </plugins>
 </widget>
