@@ -18,17 +18,17 @@
  under the License.
 -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
-        id        = "khleuven.mobile.phonegapapp"
-        version   = "2.9.0">
-    <name>PhoneGapApp</name>
+        id        = "io.cordova.helloCordova"
+        version   = "2.0.0">
+    <name>Hello Cordova</name>
 
     <description>
-        A sample PhoneGap app that uses the accelleration-sensor and the camera.
+        A sample Apache Cordova application that responds to the deviceready event.
     </description>
 
-    <author href="http://cordova.io" email="Leentje.Verfaillie@khleuven.be">
-        Leentje Verfaillie
-    </author>    
+    <author href="http://cordova.io" email="dev@cordova.apache.org">
+        Apache Cordova Team
+    </author>
 
     <access origin="*"/>
 
@@ -36,7 +36,6 @@
     <content src="index.html" />
 
     <preference name="loglevel" value="DEBUG" />
-    <preference name="orientation" value="portrait" />
     <!--
       <preference name="splashscreen" value="resourceName" />
       <preference name="backgroundColor" value="0xFFF" />
@@ -45,10 +44,14 @@
       <preference name="disallowOverscroll" value="true" />
     -->
     
-     <icon src="ic_launcher.png" />
+    <preference name="orientation" value="portrait" />
+    <icon src="ic_launcher.png" />
 
     <feature name="App">
       <param name="android-package" value="org.apache.cordova.App"/>
+    </feature>
+    <feature name="Geolocation">
+      <param name="android-package" value="org.apache.cordova.GeoBroker"/>
     </feature>
     <feature name="Device">
       <param name="android-package" value="org.apache.cordova.Device"/>
@@ -56,13 +59,52 @@
     <feature name="Accelerometer">
       <param name="android-package" value="org.apache.cordova.AccelListener"/>
     </feature>
+    <feature name="Compass">
+      <param name="android-package" value="org.apache.cordova.CompassListener"/>
+    </feature>
+    <feature name="Media">
+      <param name="android-package" value="org.apache.cordova.AudioHandler"/>
+    </feature>
     <feature name="Camera">
       <param name="android-package" value="org.apache.cordova.CameraLauncher"/>
     </feature>
+    <feature name="Contacts">
+      <param name="android-package" value="org.apache.cordova.ContactManager"/>
+    </feature>
+    <feature name="File">
+      <param name="android-package" value="org.apache.cordova.FileUtils"/>
+    </feature>
+    <feature name="NetworkStatus">
+      <param name="android-package" value="org.apache.cordova.NetworkManager"/>
+    </feature>
+    <feature name="Notification">
+      <param name="android-package" value="org.apache.cordova.Notification"/>
+    </feature>
+    <feature name="Storage">
+      <param name="android-package" value="org.apache.cordova.Storage"/>
+    </feature>
+    <feature name="FileTransfer">
+      <param name="android-package" value="org.apache.cordova.FileTransfer"/>
+    </feature>
+    <feature name="Capture">
+      <param name="android-package" value="org.apache.cordova.Capture"/>
+    </feature>
+    <feature name="Battery">
+      <param name="android-package" value="org.apache.cordova.BatteryListener"/>
+    </feature>
+    <feature name="SplashScreen">
+      <param name="android-package" value="org.apache.cordova.SplashScreen"/>
+    </feature>
+    <feature name="Echo">
+      <param name="android-package" value="org.apache.cordova.Echo"/>
+    </feature>
+    <feature name="Globalization">
+      <param name="android-package" value="org.apache.cordova.Globalization"/>
+    </feature>
+    <feature name="InAppBrowser">
+      <param name="android-package" value="org.apache.cordova.InAppBrowser"/>
+    </feature>
     <!-- Deprecated plugins element. Remove in 3.0 -->
     <plugins>
-        <plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
-		<feature name="http://api.phonegap.com/1.0/camera"/>
-		<feature name="http://api.phonegap.com/1.0/file"/>
     </plugins>
 </widget>
