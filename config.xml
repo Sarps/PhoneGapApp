@@ -36,6 +36,7 @@
     <content src="index.html" />
 
     <preference name="loglevel" value="DEBUG" />
+    <preference name="phonegap-version" value="2.9.0" />
     <!--
       <preference name="splashscreen" value="resourceName" />
       <preference name="backgroundColor" value="0xFFF" />
