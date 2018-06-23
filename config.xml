@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="gh.com.stanbicbank.edem" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.google.support" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 		<name>google-support</name>
 		<description>no description.</description>
 		<author href="http://sarps.github.com" email="esarpong51@gmail.com">Edem - Stanbic</author>
