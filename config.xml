@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="gh.com.stanbicbank.edem" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+		<name>Edem</name>
+		<description>no description.</description>
+		<author href="http://sarps.github.com" email="esarpong51@gmail.com">Edem - Stanbic</author>
+		<content src="index.html" />
+
+	    <access origin="*" />
+
+		<feature name="http://api.phonegap.com/1.0/network" />
+
+		<platform name="ios">
+			<icon src="icons\res\xxhdpi.png" width="144" height="144" />
+		</platform>
+		
+		<platform name="android">
+			<icon src="res\mdpi.png" qualifier="mdpi" />
+			<icon src="res\hdpi.png" qualifier="hdpi" />
+			<icon src="res\xhdpi.png" qualifier="xhdpi" />
+			<icon src="res\xxhdpi.png" qualifier="xxhdpi" />
+			<icon src="res\xxxhdpi.png" qualifier="xxxhdpi" />
+		</platform>
+
+		<icon src="icon.png" />
+		<splash src="res\splash.png" width="1242" height="2208" /> 
+		<splash src="res\splash - land.png" width="2208" height="1242" /> 
+</widget>
